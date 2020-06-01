@@ -26,7 +26,6 @@ public class ConsoleReporter {
         executor.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
-                System.out.println("2");
                 // 第1个代码逻辑：根据给定的时间区间，从数据库中拉取数据；
                 long durationInMillis = durationInSeconds * 1000;
                 long endTimeInMillis = System.currentTimeMillis();
